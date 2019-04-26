@@ -5,7 +5,6 @@ export const format = (dateToFormatTimeMillis, systemDateTimeMillis) => {
   if (dateToFormat.toDateString() === systemDate.toDateString()) {
     return "TODAY";
   } else {
-    // return dateToFormat.toLocaleString("en-GB");
     return Intl.DateTimeFormat("en-GB").format(dateToFormat);
   }
 };
